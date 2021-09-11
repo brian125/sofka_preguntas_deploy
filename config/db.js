@@ -12,6 +12,12 @@ module.exports = new Sequelize(process.env.BD_NAME, process.env.BD_USER, process
         acquire: 30000,
         idle: 10000
     },
+    dialectOptions: {
+        ssl: {
+            require: true,
+            rejectUnauthorized: false
+        }
+    },
     define: {
         timestamps: false
     }

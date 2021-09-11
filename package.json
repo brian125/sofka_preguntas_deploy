@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "start": "node ./index.js"
+    "start": "serve -s build"
   },
   "author": "Brayan Alexis Silva Ramirez",
   "license": "ISC",

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Prueba tecnica sofka con Node, postgreSQL y EJS",
   "engines": {
-    "node": "16.1.0"
+    "node": "12.11.1"
   },
   "main": "index.js",
   "scripts": {

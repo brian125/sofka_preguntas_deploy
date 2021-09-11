@@ -16,6 +16,7 @@ module.exports = new Sequelize(process.env.BD_NAME, process.env.BD_USER, process
     dialectOptions: {
         ssl: {
             require: true,
+            rejectUnauthorized: false
         }
     },
     define: {

@@ -1,0 +1,163 @@
+INSERT INTO "categories" ("id", "name") VALUES 
+('1', 'Nivel 1'),
+('2', 'Nivel 2'),
+('3', 'Nivel 3'),
+('4', 'Nivel 4'),
+('5', 'Nivel 5');
+
+INSERT INTO "questions" ("id", "description", "categoryId") VALUES 
+('1', 'Cuanto es 2+2','1'),
+('2', 'Cual es la capital de colombia','1'),
+('3', 'Cuantos reinos hay en la naturaleza','1'),
+('4', 'Quien descubrio américa','1'),
+('5', 'Cual es la moneda de colombia','1'),
+
+('6', 'Cuantos departamentos tiene colombia','2'),
+('7', 'Cual es el nombre del papa','2'),
+('8', 'Cual es la religión más predominante en colombia','2'),
+('9', 'Cual es el nombre del presidente de EEUU','2'),
+('10', 'Cuantos municipios tiene antioquia','2'),
+
+('11', 'Cual es el lugar mas frío de la tierra','3'),
+('12', 'Que tipo de animal es la ballena','3'),
+('13', 'En que año termino la segunda guerra mundial','3'),
+('14', 'Quien es el autor del Quijote','3'),
+('15', 'Quien pinto la última cena','3'),
+
+('16', 'En que año llegó Cristobal Colón a américa','4'),
+('17', 'Cual es el disco musical más vendido en la historia','4'),
+('18', 'En que se especializa la cartografía','4'),
+('19', 'Cual es el país mas poblado de la tierra','4'),
+('20', 'Quien era el general de los nazis en la segunda guerra mundial','4'),
+
+('21', 'Cual de las siguientes organizaciones NO pertenece a Sofka Technologies','5'),
+('22', 'Proximamente donde abrirá oficinas Sofka Technologies','5'),
+('23', 'Alrededor de cuantas personas hacen parte de Sofka Technologies','5'),
+('24', 'Cuantos trainings internos y externos tiene Sofka Technologies actualmente','5'),
+('25', 'Porque palabras esta compuesto Sofka','5');
+
+INSERT INTO "answers" ("id", "description", "type" , "questionId") VALUES 
+('1', '4', '1', '1'),
+('2', '3', '0', '1'),
+('3', '2', '0', '1'),
+('4', '1', '0', '1'),
+
+('5', 'Bogota', '1', '2'),
+('6', 'Cali', '0', '2'),
+('7', 'Medellin', '0', '2'),
+('8', 'Cartagena', '0', '2'),
+
+('9', '7', '1', '3'),
+('10', '1', '0', '3'),
+('11', '3', '0', '3'),
+('12', '5', '0', '3'),
+
+('13', 'Cristóbal Colón', '1', '4'),
+('14', 'Manuel de Sofka U', '0', '4'),
+('15', 'Fulanito de tal', '0', '4'),
+('16', 'Pepito Peréz', '0', '4'),
+
+('17', 'Peso', '1', '5'),
+('18', 'Dola', '0', '5'),
+('19', 'Euro', '0', '5'),
+('20', 'Yen', '0', '5'),
+
+('21', '31', '1', '6'),
+('22', '32', '0', '6'),
+('23', '41', '0', '6'),
+('24', '42', '0', '6'),
+
+('25', 'Francisco', '1', '7'),
+('26', 'Juan Pablo', '0', '7'),
+('27', 'Benedicto', '0', '7'),
+('28', 'Juan', '0', '7'),
+
+('29', 'Católica', '1', '8'),
+('30', 'Evangélica', '0', '8'),
+('31', 'Ateo', '0', '8'),
+('32', 'Creyentes sin religión', '0', '8'),
+
+('33', 'Joe Biden', '1', '9'),
+('34', 'Donald Trump', '0', '9'),
+('35', 'Barack Obama', '0', '9'),
+('36', 'George Bush', '0', '9'),
+
+('37', '125', '1', '10'),
+('38', '115', '0', '10'),
+('39', '135', '0', '10'),
+('40', '145', '0', '10'),
+
+('41', 'Antártida', '1', '11'),
+('42', 'Rusia', '0', '11'),
+('43', 'Canadá', '0', '11'),
+('44', 'Islandia', '0', '11'),
+
+('45', 'Cétaceos', '1', '12'),
+('46', 'Peces', '0', '12'),
+('47', 'Moluscos', '0', '12'),
+('48', 'Cnidarios', '0', '12'),
+
+('49', '1945', '1', '13'),
+('50', '1935', '0', '13'),
+('51', '1925', '0', '13'),
+('52', '1955', '0', '13'),
+
+('53', 'Miguel de Servantes', '1', '14'),
+('54', 'Homero', '0', '14'),
+('55', 'Julio Cortázar', '0', '14'),
+('56', 'Tomás de Iriarte', '0', '14'),
+
+('57', 'Leonardo Da Vinci', '1', '15'),
+('58', 'Donato di Niccoló', '0', '15'),
+('59', 'Michelangelo Bounarroti', '0', '15'),
+('60', 'Rafael Sanzio', '0', '15'),
+
+('61', '1492', '1', '16'),
+('62', '1482', '0', '16'),
+('63', '1472', '0', '16'),
+('64', '1502', '0', '16'),
+
+('65', 'Thriller- Michael Jackson', '1', '17'),
+('66', 'The dark side of the moon- Pink Floyd', '0', '17'),
+('67', 'Bohemian Rhapsody- Queen', '0', '17'),
+('68', 'Back in Black- AC/DC', '0', '17'),
+
+('69', 'Estudio de mapas', '1', '18'),
+('70', 'Estudio de la vida social humana', '0', '18'),
+('71', 'Estudia el pensamiento humano', '0', '18'),
+('72', 'Estudia a Dios', '0', '18'),
+
+('73', 'China', '1', '19'),
+('74', 'India', '0', '19'),
+('75', 'Estados Unidos', '0', '19'),
+('76', 'Indonesia', '0', '19'),
+
+('77', 'Heinrich Himmler', '1', '20'),
+('78', 'Adolf Hitler', '0', '20'),
+('79', 'Julius Streicher', '0', '20'),
+('80', 'Hermann Göring', '0', '20'),
+
+('81', 'Valtica', '1', '21'),
+('82', 'Digital Interactions', '0', '21'),
+('83', 'Sofka U', '0', '21'),
+('84', 'Jelpit', '0', '21'),
+
+('85', 'México', '1', '22'),
+('86', 'Panamá', '0', '22'),
+('87', 'India', '0', '22'),
+('88', 'Estados Unidos', '0', '22'),
+
+('89', '500', '1', '23'),
+('90', '200', '0', '23'),
+('91', '300', '0', '23'),
+('92', '400', '0', '23'),
+
+('93', '7', '1', '24'),
+('94', '2', '0', '24'),
+('95', '3', '0', '24'),
+('96', '5', '0', '24'),
+
+('97', 'Software Kaisen', '1', '25'),
+('98', 'Software de calidad', '0', '25'),
+('99', 'Software Karma', '0', '25'),
+('100', 'Software Kaki', '0', '25');

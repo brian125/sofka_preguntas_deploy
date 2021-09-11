@@ -73,7 +73,7 @@ app.use('/', router());
 
 //Read host and port
 const host = process.env.HOST || '0.0.0.0';
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 
 //Add port 
 app.listen(port, host, () => {

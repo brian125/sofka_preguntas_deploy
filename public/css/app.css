@@ -1,0 +1,348 @@
+ /* LAYOUT */
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+#container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    min-height: 86vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+#header h1 {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#content {
+    margin: auto;
+    margin-top: 30px;
+    min-height: 59vh;
+}
+
+#footer p {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* HOME */
+.home {
+    margin-bottom: 80px;
+}
+
+.home p {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.start {
+    text-align: center;
+}
+
+.btn{
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.btn:hover{
+    background-color: #4CAF50;
+}
+
+/* RULES */
+.rules h2{
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rules p {
+    margin: 5px 300px;
+    color: white;
+    font-size: 20px;
+}
+
+.rules .note {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    width: 80%;
+    margin: 0px 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu a{
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.menu a:hover{
+    background-color: #4CAF50;
+}
+
+/* CREATE USER */
+.create-user {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.create-user h2 {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.field {
+    color: white;
+    font-size: 30px;
+}
+
+.field label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.field input{
+    margin-bottom: 15px;
+    width: 60%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+    border: none; 
+    font-size: 20px;
+    resize: horizontal; 
+}
+
+.btn-send{
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    background-color: #4CAF50;
+}
+
+/* FLASH ALERTS */
+.alerts{
+    width: 60%;
+    margin-left: 250px;
+}
+
+.alert{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.error{
+    background-color: #f44336;
+}
+
+.success{
+    background-color: #4CAF50;
+}
+
+/* QUESTIONS */
+.question h2 {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.points {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.points h3 {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: auto;
+}
+
+.btn-success, 
+a input{
+    all: unset;
+}
+
+.answer a,
+.btn-success{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+.answer a:hover,
+.btn-success:hover {
+    background-color: #149FDA;
+}
+
+.retire {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-retire {
+    margin: auto;
+    background-color: #f44336; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn-retire:hover{
+    background-color: red; 
+}
+
+/* GAME OVER OR WINNER */
+.game-over{
+    width: 70%;
+    margin: auto;
+}
+
+.game-over h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90px;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* RESULTS: WIN OR LOSE */
+.results {
+    margin-top: 80px;
+}
+
+.results h3 {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(yellow,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-win{
+    width: 70%;
+    margin-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-win a {
+    width: 30%;
+    background-color: orangered; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-win a:hover{
+    background-color: #4CAF50;
+}

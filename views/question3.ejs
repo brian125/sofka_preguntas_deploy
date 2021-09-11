@@ -1,0 +1,26 @@
+<div class="question">
+    <h2><%= pageName %></h2>
+    <div class="points">
+        <h3><%= category.name %></h3>
+        <h3>Puntos: <%= player.points%></h3>
+    </div>
+    <p><%= question.description %></p>
+    <!-- <div class="answers"> -->
+        <form class="answers" action="/question3/<%= player.id %>" method="GET">
+            <% answers.forEach(answer => { %> 
+                <div class="answer">
+                    <% if(answer.type === 1) { %> 
+                            <input class="btn-success" type="submit" value="<%= answer.description %>">
+                    <% } else { %>
+                        <a href="/lose">
+                            <input type="button" value="<%= answer.description %>"> 
+                        </a>
+                    <% } %> 
+                </div>
+            <% }) %>
+        </form> 
+    <!-- </div> -->
+    <div class="retire">
+        <a class="btn-retire" href="/retire">Retirarse</a>
+    </div>
+</div>

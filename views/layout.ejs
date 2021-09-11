@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofka preguntas - <%- pageName %></title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+
+    <div id="container">
+        <header id="header">
+                <a href="/">
+                    <img src="/img/logo.png" alt="Sofka logo">
+                </a>
+                <h1>Sofka Preguntas</h1>
+        </header>
+
+        <% if(locals.messages) { %>
+            <% const category = Object.keys(locals.messages) %>
+            <% if(category.length) { %>
+                <% locals.messages[category].forEach(alert => {%>
+                    <div class="alerts">
+                        <p class="alert <%= category %>"><%= alert %></p> 
+                    </div>  
+                <% }) %> 
+            <% } %> 
+        <% } %> 
+
+        <div id="content">
+            <%- body %>    
+        </div>
+
+        <div id="footer">
+            <p>Todos los derechos reservados &copy; Brayan Alexis Silva Ramirez <%- locals.year %> </p>
+        </div>
+        
+    </div> 
+    
+    
+
+
+
+
+</body>
+</html>

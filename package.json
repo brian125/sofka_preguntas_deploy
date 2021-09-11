@@ -1,0 +1,30 @@
+{
+  "name": "sofka",
+  "version": "1.0.0",
+  "description": "Prueba tecnica sofka con Node, postgreSQL y EJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "author": "Brayan Alexis Silva Ramirez",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
+  }
+}

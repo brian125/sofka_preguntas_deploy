@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "start": "node ./index.js"
+    "start": "node index.js"
   },
   "author": "Brayan Alexis Silva Ramirez",
   "license": "ISC",

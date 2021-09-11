@@ -2,6 +2,9 @@
   "name": "sofka",
   "version": "1.0.0",
   "description": "Prueba tecnica sofka con Node, postgreSQL y EJS",
+  "engines": {
+    "node": "16.1.0"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",

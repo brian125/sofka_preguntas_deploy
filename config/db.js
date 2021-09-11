@@ -18,7 +18,7 @@ module.exports = new Sequelize(process.env.BD_NAME, process.env.BD_USER, process
             require: true,
             rejectUnauthorized: false
         }
-    }
+    },
     define: {
         timestamps: false
     }

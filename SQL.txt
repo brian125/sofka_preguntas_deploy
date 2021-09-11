@@ -137,10 +137,10 @@ INSERT INTO "answers" ("id", "description", "type" , "questionId") VALUES
 ('79', 'Julius Streicher', '0', '20'),
 ('80', 'Hermann Göring', '0', '20'),
 
-('81', 'Valtica', '1', '21'),
-('82', 'Digital Interactions', '0', '21'),
-('83', 'Sofka U', '0', '21'),
-('84', 'Jelpit', '0', '21'),
+('81', 'Jelpit', '1', '21'),
+('82', 'Valtica', '0', '21'),
+('83', 'Digital Interactions', '0', '21'),
+('84', 'Sofka U', '0', '21'),
 
 ('85', 'México', '1', '22'),
 ('86', 'Panamá', '0', '22'),
